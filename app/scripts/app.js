@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name firebaseApp
+ * @name biosite
  * @description
- * # firebaseApp
+ * # biosite
  *
  * Main module of the application.
  */
 angular
-  .module('firebaseApp', [
+  .module('biosite', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -23,10 +23,7 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
+
       .otherwise({
         redirectTo: '/'
       });

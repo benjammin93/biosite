@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name firebaseApp.controller:MainCtrl
+ * @name biosite.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the firebaseApp
+ * Controller of the biosite
  */
-angular.module('firebaseApp')
+angular.module('biosite')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

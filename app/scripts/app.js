@@ -13,18 +13,28 @@ angular
     'ngAnimate',
     'ngCookies',
     'ngResource',
-    'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'fireUser',
+    'firebase',
+    'ui.router',
+    'ui.bootstrap'
+
   ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+  .config(function ($stateProvider, $urlRouterProvider) {
+
+    $urlRouterProvider.otherwise("/home");
+    $stateProvider
+      .state('home', {
+        url: "/home",
+        templateUrl: "views/home.html"
+      })
+    $stateProvider
+      .state('booking', {
+        url: "/booking",
+        templateUrl: "views/booking.html",
+        controller: 'booking'
       })
 
-      .otherwise({
-        redirectTo: '/'
-      });
+
   });

@@ -4,6 +4,24 @@ body {
   padding-bottom: 20px;
 }
 
+
+@font-face {
+    font-family: 'Libel-Suit';
+    src:url('../images/fonts/Libel-Suit.ttf.woff') format('woff'),
+        url('../images/fonts/Libel-Suit.ttf.svg#Libel-Suit') format('svg'),
+        url('../images/fonts/Libel-Suit.ttf.eot'),
+        url('../images/fonts/Libel-Suit.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.libel {
+   font-family: 'Libel-Suit';
+   font-size: 2em;
+}
+
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
